@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy «Седона»</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logos/main-logo.svg" width="185" height="96" alt="Логотипт «Седона».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form-container">
+      <h1 class="visually-hidden">Поля форм</h1>
+      <img class="form-container__logo" src="img/logos/catalog-logo.svg" width="229" height="39" alt="Седона">
+      <div class="form-container__wrapper">
+        <form class="form-fields" action="https://echo.htmlacademy.ru/" method="get">
+          <header class="form-fields__header">
+            <h2 class="form-fields__title">Оставь свой отзыв</h2>
+            <p class="form-fields__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </header>
+          <section class="introduce-fields">
+            <fieldset class="introduce-fields__name-fields">
+            <legend class="introduce-fields__legend">Представьтесь:</legend>
+            <ul class="introduce-fields__list">
+              <li class="introduce-fields_item">
+                <label for="first-name">Имя:*</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Петр">
+              </li>
+              <li class="introduce-fields_item">
+                <label for="last-name">Фамилия:*</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Пустота">
+              </li>
+              <li class="introduce-fields_item">
+                <label for="patronymic">Отчество:*</label>
+                <input type="text" name="patronymic" id="patronymic" placeholder="Викторович">
+              </li>
+            </ul>
+            </fieldset>
+          </section>
+          <section class="contact-fields">
+            <fieldset class="contact-fields__mail-tel">
+            <legend class="contact-fields__legend">Контактная информация:</legend>
+            <ul class="contact-fields__list">
+              <li class="contact-fields__item">
+                <label for="tel">Контактный телефон*:</label>
+                <input type="number" name="tel" id="tel" placeholder="Введите телефон">
+                <img class="contact-fields__icon--tel" src="img/icons/icon-phone.svg" width="18" height="18" alt="Телефонная трубка">
+              </li>
+              <li class="contact-fields__item">
+                <label for="email">Электронная почта*:</label>
+                <input type="text" name="email" id="email" placeholder="Введите e-mail">
+                <img class="contact-fields__icon--email" src="img/icons/icon-email.svg" width="16" height="12" alt="Почтовый конверт">
+              </li>
+            </ul>
+            </fieldset>
+          </section>
+          <section class="radio-fields">
+            <fieldset class="radio-fields__showplaces">
+            <legend class="radio-fields__legend">Ваше oбщее впечатление:</legend>
+            <ul class="radio-fields__list">
+              <li class="radio-fields__item">
+                <input class="radio-fields__radio" type="radio" name="radio-button" id="positive" value="positive" checked>
+                <label for="positive">Скорее положительное</label>
+              </li>
+              <li class="radio-fields__item">
+                <input class="radio-fields__radio" type="radio" name="radio-button" id="negative" value="negative">
+                <label for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="radio-fields__item">
+                <input class="radio-fields__radio" type="radio" name="radio-button" id="uncertain" value="uncertain">
+                <label for="uncertain">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+            </fieldset>
+          </section>
+          <section class="checkbox-fields">
+            <fieldset class="checkbox-fields__impressions">
+            <legend class="checkbox-fields__legend">Посещенные достопримечательности:</legend>
+            <ul class="checkbox-fields__list">
+              <li class="checkbox-fields__item">
+                <input class="checkbox-fields__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <label for="devil-bridge">Мост Дьявола</label>
+              </li>
+              <li class="checkbox-fields__item">
+                <input class="checkbox-fields__checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
+                <label for="mount-bell">Гора-Колокол</label>
+              </li>
+              <li class="checkbox-fields__item">
+                <input class="checkbox-fields__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                <label for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="checkbox-fields__item">
+                <input type="checkbox" name="red-rocks" id="red-rocks">
+                <label for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+            </fieldset>
+          </section>
+          <section class="fitback">
+            <fieldset class="fitback__textarea">
+              <legend class="fitback__legend">Опишите свои эмоции::</legend>
+              <textarea class="fitback__textarea" cols="22" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+              <button class="fitback__button" type="submit">
+                <span class="fitback__button-label">Отправить отзыв</span>
+              </button>
+              <small class="fitback__legend">* — обязательные поля</small>
+          </section>
+        </div>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <span class="vissualy-hidden">Хештег Сидоны</span>
+          <img src="img/footer-icons/footer-hashtag.svg" width="136" height="16" alt="Хештег «Посетите Седону».">
+        </div>
+        <div class="main-footer__social social">
+          <h2 class="vissualy-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="">
+                <span class="vissually-hidden">Мы в Вконтакте</span>
+                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)">
+                  <path fill="#fff" fill-rule="evenodd" d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/></g><defs><clipPath id="a">
+                  <path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="">
+                <span class="vissually-hidden">Мы в Телеграме</span>
+                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+                  <path fill="#81B3D2" d="M0 0h48v48H0z"/>
+                  <path fill="#fff" d="m34.44 16.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2l-11.07 6.97-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53l18.62-7.18c.87-.32 1.62.2 1.34 1.51Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+                <span class="vissually-hidden">Мы в Ютубе</span>
+                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+                  <path fill="#81B3D2" d="M0 0h48v48H0z"/>
+                  <path fill="#fff" d="M31.18 17H16.81c-1.5 0-2.81 1.3-2.81 2.8v8.3c0 1.6 1.3 2.9 2.81 2.9h14.37A2.8 2.8 0 0 0 34 28.2v-8.4c.1-1.5-1.2-2.8-2.8-2.8ZM21.03 27.4v-6.8l6.84 3.4-6.84 3.4Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <span class="main-footer__made-by">Разработано</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+            <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
