@@ -18,10 +18,10 @@
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
@@ -31,7 +31,6 @@
         </div>
       </nav>
     </header>
-
     <main class="form-container">
       <h1 class="visually-hidden">Поля форм</h1>
       <img class="form-container__logo" src="img/logos/catalog-logo.svg" width="229" height="39" alt="Седона">
@@ -41,19 +40,19 @@
             <h2 class="form-fields__title">Оставь свой отзыв</h2>
             <p class="form-fields__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
-          <section class="introduce-fields">
-            <fieldset class="introduce-fields__name-fields">
-            <legend class="introduce-fields__legend">Представьтесь:</legend>
-            <ul class="introduce-fields__list">
-              <li class="introduce-fields_item">
+          <section class="text-fields">
+            <fieldset class="text-fields__name">
+            <legend class="text-fields__legend">Представьтесь:</legend>
+            <ul class="text-fields__list">
+              <li class="text-fields__item">
                 <label for="first-name">Имя:*</label>
                 <input type="text" name="first-name" id="first-name" placeholder="Петр">
               </li>
-              <li class="introduce-fields_item">
+              <li class="text-fields__item">
                 <label for="last-name">Фамилия:*</label>
                 <input type="text" name="last-name" id="last-name" placeholder="Пустота">
               </li>
-              <li class="introduce-fields_item">
+              <li class="text-fields__item">
                 <label for="patronymic">Отчество:*</label>
                 <input type="text" name="patronymic" id="patronymic" placeholder="Викторович">
               </li>
@@ -61,18 +60,18 @@
             </fieldset>
           </section>
           <section class="contact-fields">
-            <fieldset class="contact-fields__mail-tel">
+            <fieldset class="contact-fields__email-tel">
             <legend class="contact-fields__legend">Контактная информация:</legend>
             <ul class="contact-fields__list">
               <li class="contact-fields__item">
                 <label for="tel">Контактный телефон*:</label>
                 <input type="number" name="tel" id="tel" placeholder="Введите телефон">
-                <img class="contact-fields__icon--tel" src="img/icons/icon-phone.svg" width="18" height="18" alt="Телефонная трубка">
+                <img class="contact-fields__icon-tel" src="img/icons/icon-phone.svg" width="18" height="18" alt="Телефонная трубка">
               </li>
               <li class="contact-fields__item">
                 <label for="email">Электронная почта*:</label>
                 <input type="text" name="email" id="email" placeholder="Введите e-mail">
-                <img class="contact-fields__icon--email" src="img/icons/icon-email.svg" width="16" height="12" alt="Почтовый конверт">
+                <img class="contact-fields__icon-email" src="img/icons/icon-email.svg" width="16" height="12" alt="Почтовый конверт">
               </li>
             </ul>
             </fieldset>
@@ -119,17 +118,18 @@
             </ul>
             </fieldset>
           </section>
-          <section class="fitback">
-            <fieldset class="fitback__textarea">
-              <legend class="fitback__legend">Опишите свои эмоции::</legend>
-              <textarea class="fitback__textarea" cols="22" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
-              <button class="fitback__button" type="submit">
-                <span class="fitback__button-label">Отправить отзыв</span>
+          <section class="feedback">
+            <fieldset class="feedback__textarea">
+              <legend class="feedback__legend">Опишите свои эмоции::</legend>
+              <textarea class="feedback__textarea" cols="22" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+              <button class="feedback__button" type="submit">
+                <span class="feedback__button-label">Отправить отзыв</span>
               </button>
-              <small class="fitback__legend">* — обязательные поля</small>
+              <small class="feedback__text">* — обязательные поля</small>
+            </fieldset>
           </section>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -168,11 +168,13 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
-          <span class="main-footer__made-by">Разработано</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-            <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
-          </svg>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+              <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
