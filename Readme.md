@@ -1,7 +1,6 @@
 # Личный проект «Седона» 
 
 * Студент: [Дмитрий1408 Шентяков](https://up.htmlacademy.ru/adaptive/27/user/1692153).
-* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263)
 
 ---
 
