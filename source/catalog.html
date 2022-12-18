@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy «Седона»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -11,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span >Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -34,45 +35,45 @@
     <main class="catalog-container">
       <div class="catalog-welcome">
       <h1 class="visually-hidden">Галерея Седоны</h1>
-      <img class="catalog-welcome__logo" src="img/logos/catalog-logo.svg" width="229" height="39" alt="Седона">
+      <img class="catalog-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
       </div>
       <section class="gallery">
         <div class="gallery__wrapper">
           <header class="gallery__header">
-            <h2 class="gallery__title">Фото и видео</h2>
-            <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <h2 class="header__title">Фото и видео</h2>
+            <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </header>
           <ul class="gallery__list">
             <li class="gallery__item">
               <a href="img/gallery/highway-in-desert.jpg">
                 <img class="gallery__picture" src="img/gallery/highway-in-desert.jpg" width="280" height="280" alt="Шоссе в пустыне">
               </a>
-              <h2 class="gallery__title">Неродные просторы</h2>
-              <p class="gallery__picture-author">Автор фото: Борис</p>
+              <p class="gallery__description">Неродные просторы</p>
+              <small class="gallery__picture-author">Автор фото: Борис</small>
               <span class="gallery__like-counter">1350</span>
             </li>
             <li class="gallery__item">
               <a href="img/gallery/cactus.jpg">
                 <img class="gallery__picture" src="img/gallery/cactus.jpg" width="280" height="280" alt="Кактус на фоне горы">
               </a>
-              <h2 class="gallery__title">Местная растительность</h2>
-              <p class="gallery__picture-author">Автор фото: Сергей</p>
+              <p class="gallery__description">Местная растительность</p>
+              <small class="gallery__picture-author">Автор фото: Сергей</small>
               <span class="gallery__like-counter">143</span>
             </li>
             <li class="gallery__item">
               <a href="img/gallery/mountin-road.jpg">
                 <img class="gallery__picture" src="img/gallery/mountin-road.jpg" width="280" height="280" alt="Горная дорога">
               </a>
-              <h2 class="gallery__title">Дорога на север</h2>
-              <p class="gallery__picture-author">Автор фото: Петр</p>
+              <p class="gallery__description">Дорога на север</p>
+              <small class="gallery__picture-author">Автор фото: Петр</small>
               <span class="gallery__like-counter">96</span>
             </li>
             <li class="gallery__item">
               <a href="img/gallery/devil-bridge.jpg">
                 <img class="gallery__picture" src="img/gallery/devil-bridge.jpg" width="280" height="280" alt="Мост Дьявола">
               </a>
-              <h2 class="gallery__title">Мост Дьявола</h2>
-              <p class="gallery__picture-author">Автор фото: Антон</p>
+              <p class="gallery__description">Мост Дьявола</p>
+              <small class="gallery__picture-author">Автор фото: Антон</small>
               <span class="gallery__like-counter">254</span>
             </li>
           </ul>
@@ -81,20 +82,20 @@
       <section class="gallery-video">
         <div class="gallery-video__wrapper">
           <h2 class="gallery-video__title">Вы еще сомневаетесь?</h2>
-          <p class="gallery-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="gallery-video__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
           <img src="img/gallery/video-screen.jpg" width="280" height="177" alt="Оживленное шоссе в горах">
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <span class="main-footer__hashtag">#visitsedona</span>
-        <div class="main-footer__social social">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <span class="footer__hashtag">#visitsedona</span>
+        <div class="footer__social social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#">
-                <span class="vissually-hidden">Мы в Вконтакте</span>
+                <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)">
                   <path fill="#fff" fill-rule="evenodd" d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/></g><defs><clipPath id="a">
                   <path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs></svg>
@@ -120,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
