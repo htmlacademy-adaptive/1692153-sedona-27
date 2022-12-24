@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy «Седона»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,6 +16,7 @@
         <button class="main-nav__toggle" type="button">
           <span>Открыть меню</span>
         </button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -29,6 +31,7 @@
               <a href="#">HTML Academy</a>
             </li>
           </ul>
+        </div>
       </nav>
     </header>
     <main class="form-container">
@@ -39,23 +42,24 @@
         <form class="form-fields" action="https://echo.htmlacademy.ru/" method="get">
           <header class="form-fields__header">
             <h2 class="form-fields__title">Оставь свой отзыв</h2>
-            <p class="form-fields__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="form-fields__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
           </header>
+          <div class="contact-wrapper">
           <section class="text-fields">
             <fieldset class="text-fields__name">
-            <legend class="text-fields__legend">Представьтесь:</legend>
+            <legend class="fields__legend">Представьтесь:</legend>
             <ul class="text-fields__list">
               <li class="text-fields__item">
                 <label for="first-name">Имя:*</label><br>
-                <input class="text-fields__placeholder" type="text" name="first-name" id="first-name" placeholder="Петр">
+                <input class="text-fields__placeholder" type="text" name="first-name" id="first-name" placeholder="Имя">
               </li>
               <li class="text-fields__item">
                 <label for="last-name">Фамилия:*</label><br>
-                <input class="text-fields__placeholder" type="text" name="last-name" id="last-name" placeholder="Пустота">
+                <input class="text-fields__placeholder" type="text" name="last-name" id="last-name" placeholder="Фамилия">
               </li>
               <li class="text-fields__item">
                 <label for="patronymic">Отчество:*</label><br>
-                <input class="text-fields__placeholder" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
+                <input class="text-fields__placeholder" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
               </li>
             </ul>
             </fieldset>
@@ -75,9 +79,10 @@
             </ul>
             </fieldset>
           </section>
+         </div>
           <section class="radio-fields">
             <fieldset class="radio-fields__showplaces">
-            <legend class="fields__legend">Ваше oбщее впечатление:</legend>
+            <legend class="radio-fields__legend fields__legend">Ваше oбщее впечатление:</legend>
             <ul class="radio-fields__list">
               <li class="radio-fields__item">
                 <input class="radio-fields__radio" type="radio" name="radio-button" id="positive" value="positive" checked>
@@ -96,7 +101,7 @@
           </section>
           <section class="checkbox-fields">
             <fieldset class="checkbox-fields__impressions">
-            <legend class="fields__legend">Посещенные достопримечательности:</legend>
+            <legend class="checkbox-fields__legend fields__legend">Посещенные достопримечательности:</legend>
             <ul class="checkbox-fields__list">
               <li class="checkbox-fields__item">
                 <input class="checkbox-fields__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>

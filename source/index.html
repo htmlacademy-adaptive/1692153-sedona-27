@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy «Седона»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -13,8 +14,9 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span>Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
+        <!-- <div class="main-nav__wrapper"> -->
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a href="index.html">Главная</a>
@@ -29,6 +31,7 @@
               <a href="#">HTML Academy</a>
             </li>
           </ul>
+        <!-- </div> -->
       </nav>
     </header>
     <main class="main-container">
@@ -41,7 +44,7 @@
             <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
-          <div class="advantages__item advantages__item--img-theme">
+          <div class="advantages__item advantages__item--img-theme advantages__item--img-theme-city">
             <h2 class="advantages__title-light">Настоящий городок</h2>
             <span class="advantages__number-light">— №1—</span>
             <p class="advantages__description-light">Седона не атракцион для туристов,<br> там течет своя жизнь.</p>
@@ -86,7 +89,6 @@
           </ul>
       </section>
       <section class="hotel-searching">
-
             <h2 class="hotel-searching__title">Заинтересовались?</h2>
             <p class="hotel-searching__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button class="hotel-searching__button" type="button">
