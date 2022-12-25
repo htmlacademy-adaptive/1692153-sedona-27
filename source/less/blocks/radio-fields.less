@@ -1,6 +1,9 @@
 .radio-fields {
-  display: flex;
   margin-bottom: 59px;
+}
+
+.radio-fields__legend {
+  margin: 0 auto;
 }
 
 .radio-fields__label {
@@ -14,10 +17,10 @@
 @media (min-width: @tablet-width) {
   .radio-fields__list {
     display: grid;
-    grid-template-columns: 280px 280px 280px;
+    grid-template-columns: 280px 280px;
     margin-left: 96px;
     margin-right: 96px;
-    width: 648px;
+    width: 576px;
   }
 }
 
@@ -27,7 +30,7 @@
     grid-template-columns: 433px 433px 433px;
     margin-right: 173px;
     margin-left: 173px;
-    width: 960px;
+    max-width: 960px;
   }
 }
 

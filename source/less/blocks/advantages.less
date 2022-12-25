@@ -71,14 +71,25 @@
   }
 }
 
-// @media (min-width: @desktop-width) {
-//   .advantages__item--img-theme-city {
+// @media (min-width: @tablet-width) {
+//   .advantages__list--img-theme {
 //     display: grid;
-//     grid-template-columns: 256px 512px;
-//     min-height: 256px;
 //   }
 // }
 
+@media (min-width: @desktop-width) {
+  .advantages__list--img-theme-city {
+    display: grid;
+    grid-template-columns: 256px 512px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+//   .advantages__list--img-theme-city {
+//     display: grid;
+//     grid-template-columns: 256px 512px;
+//   }
+// }
 
 @media (min-width: @tablet-width) {
   .advantages__list--icon-theme {
@@ -114,4 +125,3 @@
     max-width: 1200px;
   }
 }
-

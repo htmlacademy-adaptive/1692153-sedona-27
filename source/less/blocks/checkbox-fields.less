@@ -2,7 +2,6 @@
   margin-bottom: 59px;
 }
 
-
 .checkbox-fields__label {
   font-weight: 700;
   font-size: 18px;
@@ -11,22 +10,34 @@
   text-transform: none;
 }
 
-// @media (min-width: @tablet-width) {
-//   .radio-fields__list {
-//     display: grid;
-//     grid-template-columns: 280px 280px 280px;
-//     margin-left: 96px;
-//     margin-right: 96px;
-//     width: 648px;
-//   }
-// }
+@media (min-width: @tablet-width) {
+  .checkbox-fields__list {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    margin-left: 144px;
+    margin-right: 198px;
+    width: 480px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .checkbox-fields__list {
     display: grid;
     grid-template-columns: 172px 172px 172px 172px;
-    margin-right: 164px;
-    margin-left: 164px;
+    margin-right: 120px;
+    margin-left: 120px;
     width: 960px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox-fields__legend {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox-fields__legend {
+    margin-bottom: 59px;
   }
 }
