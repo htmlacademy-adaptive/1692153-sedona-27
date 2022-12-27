@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.advantages__item--img-theme {
+.advantages__list--img-theme {
   background-color: #81b3d2;
 }
 
@@ -71,25 +71,52 @@
   }
 }
 
-// @media (min-width: @tablet-width) {
-//   .advantages__list--img-theme {
-//     display: grid;
-//   }
-// }
-
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .advantages__list--img-theme-city {
     display: grid;
     grid-template-columns: 256px 512px;
   }
+
+  .advantages__item--city {
+    background-color: #81b3d2;
+  }
+
 }
 
-// @media (min-width: @desktop-width) {
-//   .advantages__list--img-theme-city {
-//     display: grid;
-//     grid-template-columns: 256px 512px;
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .advantages__list--img-theme-city {
+    display: grid;
+    grid-template-columns: 400px 800px;
+  }
+
+  .advantages__item--city {
+    background-color: #81b3d2;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list--img-theme-devil-bridge {
+    display: grid;
+    grid-template-columns: 512px 256px;
+  }
+
+  .advantages__item--devil-bridge {
+    background-color: #81b3d2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list--img-theme-devil-bridge {
+    display: grid;
+    grid-template-columns: 800px 400px;
+  }
+
+  .advantages__item--devil-bridge {
+    background-color: #81b3d2;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages__list--icon-theme {
@@ -113,6 +140,10 @@
     display: grid;
     grid-template-columns: 256px 256px 256px;
     min-height: 256px;
+  }
+
+  .advantages__item--darket-theme {
+    background-color: #eeeeee;
   }
 }
 
@@ -123,5 +154,9 @@
     background-color: #eeeeee;
     min-height: 256px;
     max-width: 1200px;
+  }
+
+  .advantages__item--darket-theme {
+    background-color: #eeeeee;
   }
 }

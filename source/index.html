@@ -44,12 +44,16 @@
             <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
-          <div class="advantages__item advantages__item--img-theme">
+          <ul class="advantages__list advantages__list--img-theme advantages__list--img-theme-city">
+            <li class="advantages__item--city">
             <h2 class="advantages__title-light">Настоящий городок</h2>
             <span class="advantages__number-light">— №1—</span>
             <p class="advantages__description-light">Седона не атракцион для туристов,<br> там течет своя жизнь.</p>
+          </li>
+          <li>
             <img class="advantages__img" src="img/index-main-pictures/sedona-city.jpg" width="320" height="260" alt="Мотели на улицах Седоны">
-          </div>
+          </li>
+          </ul>
           <ul class="advantages__list advantages__list--icon-theme">
             <li class="advantages__item advantages__item-icon">
               <h2 class="advantages__title advantages__title-icon">Жилье</h2>
@@ -64,24 +68,29 @@
               <p class="advantages__description advantages__description-icon">Не только китайского, но и<br> местного производства!</p>
             </li>
           </ul>
-          <div class="advantages__item advantages__item--img-theme">
-            <h2 class="advantages__title-light">Там есть мост дьявола</h2>
-            <span class="advantages__number-light">—№2—</span>
-            <p class="advantages__description-light">Да, но по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
-            <img class="advantages__img" src="img/index-main-pictures/devils-bridge-main.jpg" width="320" height="260" alt="Мост Дьявола">
-          </div>
+          <ul class="advantages__list advantages__list--img-theme advantages__list--img-theme-devil-bridge">
+            <li>
+              <img class="advantages__img" src="img/index-main-pictures/devils-bridge-main.jpg" width="320" height="260" alt="Мост Дьявола">
+            </li>
+            <li class="advantages__item--devil-bridge">
+              <h2 class="advantages__title-light">Там есть мост дьявола</h2>
+              <span class="advantages__number-light">—№2—</span>
+              <p class="advantages__description-light">Да, но по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+            </li>
+
+          </ul>
           <ul class="advantages__list advantages__list--darker-theme">
-            <li class="advantages__item">
+            <li class="advantages__item--darket-theme">
               <h2 class="advantages__title">Небольшая площадь</h2>
               <span class="advantages__number">—№3—</span>
               <p class="advantages__description">Все интересные места находятся<br> очень близко</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item--darket-theme">
               <h2 class="advantages__title">Красивая дорога</h2>
               <span class="advantages__number">—№4—</span>
               <p class="advantages__description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item--darket-theme">
               <h2 class="advantages__title">Мало туристов</h2>
               <span class="advantages__number">—№5—</span>
               <p class="advantages__description">Большинсто едет в Гранд Каньон<br> и толпится там</p>
@@ -98,6 +107,7 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__wrapper">
         <span class="footer__hashtag">#visitsedona</span>
         <div class="footer__social social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -138,6 +148,7 @@
             </svg>
           </a>
         </div>
+      </div>
     </footer>
   </div>
   </body>

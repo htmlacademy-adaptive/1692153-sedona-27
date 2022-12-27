@@ -70,6 +70,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     grid-template-rows: 400px 267px 267px;
+    row-gap: 80px;
   }
 
   .gallery__item-desert {
@@ -91,3 +92,16 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .gallery-video {
+    width: 768px;
+    min-height: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-video {
+    width: 1200px;
+    min-height: 150px;
+  }
+}
