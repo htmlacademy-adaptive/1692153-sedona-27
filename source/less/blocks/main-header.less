@@ -1,5 +1,7 @@
-.main-header__logo {
-  margin-left: 64px;
+.main-header {
+  position: relative;
+  color: #ffffff;
+  background-color: @color-light;
 }
 
 .main-nav__list {
@@ -8,3 +10,212 @@
   list-style-type: none;
 }
 
+.main-header__logo {
+  margin-left: 64px;
+  // display: ;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+  }
+
+  .main-nav__toggle::before {
+    display: none;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  // z-index: 2;
+  top: 17px;
+  right: 20px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: @color-light;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--toggle {
+    display: none;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: @color-light;
+    width: 768px;
+  }
+
+  .main-nav__list a[href] {
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    margin-right: 75px;
+    background-color: @color-light;
+    color: @color-bold;
+    text-decoration: none;
+    z-index: 3;
+  }
+
+  .main-nav__item--current a[href] {
+    color: rgba(118, 99, 87, 1);
+  }
+
+  .main-nav__item:first-child a {
+    padding-left: 49px;
+  }
+
+  .main-nav__item:nth-child(2) a {
+    margin-right: 205px;
+  }
+
+  .main-header__logo {
+    display: none;
+  }
+
+  .main-nav__item:last-child a {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  // .main-nav__list {
+  //   width: 1200px;
+  // }
+
+  .main-nav__list a[href] {
+    margin-right: 162px;
+    text-decoration: none;
+  }
+
+  .main-nav__item:first-child a {
+    padding-left: 91px;
+  }
+
+  .main-nav__item:nth-child(2) a {
+    margin-right: 379px;
+  }
+
+  .main-nav__item:last-child a {
+    margin-right: 0;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 22px;
+  height: 4px;
+  background-color: @color-blue;
+  border: none;
+  box-shadow: 0 8px 0 0 @color-blue, 0 16px 0 0 @color-blue;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: fade(@color-blue, 60%);
+  box-shadow:
+    0 8px 0 0 fade(@color-blue, 60%),
+    0 16px 0 0 fade(@color-blue, 60%);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@color-blue, 30%);
+  box-shadow:
+    0 8px 0 0 fade(@color-blue, 30%),
+    0 16px 0 0 fade(@color-blue, 30%);
+}
+
+.main-nav__list a {
+  position: relative;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  background-color: @color-blue;
+  color: @color-light;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 20px;
+  // z-index: 2;
+  // background-color: @color-blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    width: 22px;
+    height: 4px;
+    background-color: @color-light;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(@color-light, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@color-light, 30%);
+  }
+}
+
+.main-nav--opened a[href]:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.main-nav--opened a[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(84, 150, 189, 1);
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+.main-nav--nojs .main-header__logo {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened .main-header__logo {
+    display: none;
+  }
+}

@@ -1,3 +1,7 @@
+.footer {
+  background-color: @color-light;
+}
+
 .footer__hashtag {
   font-weight: 700;
   font-size: 21px;
@@ -6,3 +10,22 @@
   color: @color-bold;
 }
 
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,7 +1,42 @@
-.feedback__placeholder::-webkit-input-placeholder {
+.feedback__legend {
+  margin-bottom: 20px;
+}
+
+.feedback__textarea::-webkit-input-placeholder {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: @color-bold;
   opacity: 30%;
+}
+
+.feedback__textarea {
+  width: 279px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__textarea {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__textarea {
+    margin-right: 216px;
+    margin-left: 216px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__legend {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    margin-bottom: 28px;
+  }
 }

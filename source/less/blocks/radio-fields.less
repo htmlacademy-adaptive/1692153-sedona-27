@@ -2,10 +2,40 @@
   margin-bottom: 59px;
 }
 
+.radio-fields__legend {
+  margin: 0 auto;
+}
+
 .radio-fields__label {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: @color-bold;
   text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .radio-fields__list {
+    display: grid;
+    grid-template-columns: 280px 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio-fields__list {
+    display: grid;
+    grid-template-columns: 433px 433px 433px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .radio-fields__legend {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio-fields__legend {
+    margin-bottom: 45px;
+  }
 }

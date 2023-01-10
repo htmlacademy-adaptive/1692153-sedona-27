@@ -1,3 +1,8 @@
+.gallery {
+  margin-bottom: 143px;
+  background-color: @color-light;
+}
+
 .header__title {
   font-weight: 700;
   font-size: 21px;
@@ -47,3 +52,27 @@
   color: @color-common;
 }
 
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    row-gap: 80px;
+  }
+
+  .gallery__item-desert {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .gallery__item-desert {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

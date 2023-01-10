@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy «Седона»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,6 +16,7 @@
         <button class="main-nav__toggle" type="button">
           <span >Открыть меню</span>
         </button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -29,6 +31,7 @@
               <a href="#">HTML Academy</a>
             </li>
           </ul>
+        </div>
       </nav>
     </header>
     <main class="catalog-container">
@@ -39,10 +42,10 @@
       <section class="gallery">
           <header class="gallery__header">
             <h2 class="header__title">Фото и видео</h2>
-            <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="header__description">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
           </header>
           <ul class="gallery__list">
-            <li class="gallery__item">
+            <li class="gallery__item-desert">
               <a href="img/gallery/highway-in-desert.jpg">
                 <img class="gallery__picture" src="img/gallery/highway-in-desert.jpg" width="280" height="280" alt="Шоссе в пустыне">
               </a>
@@ -78,11 +81,12 @@
       </section>
       <section class="gallery-video">
           <h2 class="gallery-video__title">Вы еще сомневаетесь?</h2>
-          <p class="gallery-video__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+          <p class="gallery-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
           <img src="img/gallery/video-screen.jpg" width="280" height="177" alt="Оживленное шоссе в горах">
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__wrapper">
         <span class="footer__hashtag">#visitsedona</span>
         <div class="footer__social social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -123,6 +127,7 @@
             </svg>
           </a>
         </div>
+      </div>
     </footer>
   </div>
   </body>
