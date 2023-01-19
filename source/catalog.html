@@ -8,32 +8,30 @@
   </head>
   <body class="page__body">
     <div class="page-wrapper">
-    <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/logos/main-logo.svg" width="185" height="96" alt="Логотипт «Седона».">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span >Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <header class="main-header">
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a class="main-header__logo">
+            <img src="img/logos/main-logo.svg" width="185" height="96" alt="Логотипт «Седона».">
+          </a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--current">
+                <a href="catalog.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
     <main class="catalog-container">
       <div class="catalog-welcome">
       <h1 class="visually-hidden">Галерея Седоны</h1>
@@ -96,7 +94,8 @@
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)">
                   <path fill="#fff" fill-rule="evenodd" d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/></g><defs><clipPath id="a">
-                  <path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs></svg>
+                  <path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs>
+                </svg>
               </a>
             </li>
             <li class="social__item">
@@ -120,9 +119,8 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">Разработано</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+          <a class="copyright__link" id="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg class="copyright__icon"xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
               <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
             </svg>
           </a>
