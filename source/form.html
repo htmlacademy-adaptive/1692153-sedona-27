@@ -33,13 +33,13 @@
         </nav>
       </header>
     <main class="form-container">
-      <div class="form-welcome">
+      <div class="inner-welcome">
       <h1 class="visually-hidden">Поля форм</h1>
-      <img class="form-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
       </div>
         <form class="form-fields" action="https://echo.htmlacademy.ru/" method="get">
           <header class="form-fields__header">
-            <h2 class="form-fields__title">Оставь свой отзыв</h2>
+            <h2 class="form-fields__title">Оставьте свой отзыв</h2>
             <p class="form-fields__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
           </header>
           <div class="contact-wrapper">
@@ -48,16 +48,16 @@
             <legend class="text-fields__legend fields__legend">Представьтесь:</legend>
             <ul class="text-fields__list">
               <li class="text-fields__item">
-                <label class="text-fields__label" for="first-name">Имя:*</label><br>
-                <input class="text-fields__input" type="text" name="first-name" id="first-name" placeholder="Имя">
+                <label class="text-fields__label" for="first-name">Имя:*</label>
+                <input class="text-fields__input" type="text" name="first-name" id="first-name" placeholder="Пётр">
               </li>
               <li class="text-fields__item">
-                <label class="text-fields__label" for="last-name">Фамилия:*</label><br>
-                <input class="text-fields__input" type="text" name="last-name" id="last-name" placeholder="Фамилия">
+                <label class="text-fields__label" for="last-name">Фамилия:*</label>
+                <input class="text-fields__input" type="text" name="last-name" id="last-name" placeholder="Пустота">
               </li>
               <li class="text-fields__item">
-                <label class="text-fields__label" for="patronymic">Отчество:</label><br>
-                <input class="text-fields__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+                <label class="text-fields__label" for="patronymic">Отчество:</label>
+                <input class="text-fields__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
               </li>
             </ul>
             </fieldset>
@@ -67,17 +67,17 @@
             <legend class="contact-fields__legend fields__legend">Контактная информация:</legend>
             <ul class="contact-fields__list">
               <li class="contact-fields__item">
-                <label class="contact-fields__label" for="tel">Контактный телефон*:</label><br>
+                <label class="contact-fields__label" for="tel">Контактный телефон*:</label>
                 <div class="contact-fields__wrapper">
                 <input  class="contact-fields__input" class="tel-number" type="number" name="tel" id="tel" placeholder="Введите телефон">
-                <span class="contact-fields__input--icon-phone"></span>
+                <span class="contact-fields__input-icon contact-fields__input--icon-phone"></span>
                 </div>
               </li>
               <li class="contact-fields__item">
-                <label class="contact-fields__label" for="email">Электронная почта*:</label><br>
+                <label class="contact-fields__label" for="email">Электронная почта*:</label>
                 <div class="contact-fields__wrapper">
                 <input class="contact-fields__input" type="text" name="email" id="email" placeholder="Введите e-mail">
-                <span class="contact-fields__input--icon-email"></span>
+                <span class="contact-fields__input-icon contact-fields__input--icon-email"></span>
                 </div>
               </li>
             </ul>
@@ -89,49 +89,72 @@
             <legend class="radio-fields__legend fields__legend">Ваше oбщее впечатление:</legend>
             <ul class="radio-fields__list">
               <li class="radio-fields__item">
-                <input class="radio-fields__radio" type="radio" name="radio-button" id="positive" value="positive" checked>
-                <label class="radio-fields__label" for="positive">Скорее положительное</label>
+                <label class="radio-fields__label control">
+                  <input class="visually-hidden radio-fields__radio" type="radio" name="radio-button" value="positive" checked>
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label-radio">Скорее положительное</span>
+                </label>
               </li>
               <li class="radio-fields__item">
-                <input class="radio-fields__radio" type="radio" name="radio-button" id="negative" value="negative">
-                <label class="radio-fields__label" for="negative">Скорее отрицательное</label>
+                <label class="radio-fields__label control">
+                  <input class="visually-hidden radio-fields__radio" type="radio" name="radio-button" value="negative">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label-radio">Скорее отрицательное</span>
+                </label>
               </li>
               <li class="radio-fields__item">
-                <input class="radio-fields__radio" type="radio" name="radio-button" id="uncertain" value="uncertain">
-                <label class="radio-fields__label" for="uncertain">Затрудняюсь ответить</label>
+                <label class="radio-fields__label control">
+                  <input class="visually-hidden radio-fields__radio" type="radio" name="radio-button" value="uncertain">
+                  <span class="control-mark-radio control-mark-radio-last"></span>
+                  <span class="control-label-radio control-label-radio-last">Затрудняюсь ответить</span>
+               </label>
               </li>
             </ul>
             </fieldset>
           </section>
           <section class="checkbox-fields">
             <fieldset class="checkbox-fields__showplaces">
-            <legend class="checkbox-fields__legend fields__legend">Посещенные достопримечательности:</legend>
+            <legend class="checkbox-fields__legend fields__legend">Посещенные<br> достопримечательности:</legend>
             <ul class="checkbox-fields__list">
               <li class="checkbox-fields__item">
-                <input class="checkbox-fields__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                <label class="checkbox-fields__label" for="devil-bridge">Мост Дьявола</label>
+                <label class="checkbox-fields__label control">
+                  <input class="visually-hidden checkbox-fields__checkbox" type="checkbox" name="devil-bridge" checked>
+                  <span class="control-mark-checkbox"></span>
+                  <p class="control-label-checkbox">Мост Дьявола</з>
+                </label>
               </li>
               <li class="checkbox-fields__item">
-                <input class="checkbox-fields__checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
-                <label class="checkbox-fields__label" for="mount-bell">Гора-Колокол</label>
+                <label class="checkbox-fields__label control">
+                  <input class="visually-hidden checkbox-fields__checkbox" type="checkbox" name="mount-bell" checked>
+                  <span class="control-mark-checkbox"></span>
+                  <span class="control-label-checkbox">Гора-Колокол</span>
+              </label>
               </li>
               <li class="checkbox-fields__item">
-                <input class="checkbox-fields__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
-                <label class="checkbox-fields__label" for="slide-park">Слайд-парк</label>
+                <label class="checkbox-fields__label control">
+                  <input class="visually-hidden checkbox-fields__checkbox" type="checkbox" name="slide-park" checked>
+                  <span class="control-mark-checkbox"></span>
+                  <span class="control-label-checkbox control-label-checkbox-third">Слайд-парк</span>
+              </label>
               </li>
               <li class="checkbox-fields__item">
-                <input type="checkbox" name="red-rocks" id="red-rocks">
-                <label class="checkbox-fields__label" for="red-rocks">Красные скалы</label>
+                <label class="checkbox-fields__label control">
+                  <input class="visually-hidden checkbox-fields__checkbox" type="checkbox" name="red-rocks">
+                  <span class="control-mark-checkbox"></span>
+                  <span class="control-label-checkbox control-label-checkbox-last">Красные скалы</span>
+                </label>
               </li>
             </ul>
             </fieldset>
           </section>
           <section class="feedback">
             <fieldset class="feedback__textarea">
-              <legend class="feedback__legend fields__legend">Опишите свои эмоции::</legend>
-              <textarea class="feedback__textarea" cols="22" rows="8" placeholder="Опишите подробно все свои восторги"></textarea><br>
-              <button class="feedback__link" type="submit" href="#">Отправить отзыв</button>
-              <small class="feedback__text">* — обязательные поля</small>
+              <legend class="feedback__legend fields__legend">Опишите свои эмоции:</legend>
+              <textarea class="feedback__textarea-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
+              <button class="feedback__button button" type="submit" href="#">Отправить отзыв</button>
+              <p class="feedback__text">
+                * — обязательные поля
+              </p>
             </fieldset>
           </section>
         </form>

@@ -33,9 +33,9 @@
         </nav>
       </header>
     <main class="catalog-container">
-      <div class="catalog-welcome">
+      <div class="inner-welcome">
       <h1 class="visually-hidden">Галерея Седоны</h1>
-      <img class="catalog-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
       </div>
       <section class="gallery">
           <header class="gallery__header">
@@ -43,12 +43,13 @@
             <p class="header__description">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
           </header>
           <ul class="gallery__list">
-            <li class="gallery__item-desert">
+            <li class="gallery__item gallery__item-desert">
               <a href="img/gallery/highway-in-desert.jpg">
                 <img class="gallery__picture" src="img/gallery/highway-in-desert.jpg" width="280" height="280" alt="Шоссе в пустыне">
               </a>
               <p class="gallery__description">Неродные просторы</p>
-              <small class="gallery__picture-author">Автор фото: Борис</small>
+              <p class="gallery__picture-author">Автор фото: Борис</p>
+              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">1350</span>
             </li>
             <li class="gallery__item">
@@ -56,7 +57,8 @@
                 <img class="gallery__picture" src="img/gallery/cactus.jpg" width="280" height="280" alt="Кактус на фоне горы">
               </a>
               <p class="gallery__description">Местная растительность</p>
-              <small class="gallery__picture-author">Автор фото: Сергей</small>
+              <p class="gallery__picture-author">Автор фото: Сергей</p>
+              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">143</span>
             </li>
             <li class="gallery__item">
@@ -64,7 +66,8 @@
                 <img class="gallery__picture" src="img/gallery/mountin-road.jpg" width="280" height="280" alt="Горная дорога">
               </a>
               <p class="gallery__description">Дорога на север</p>
-              <small class="gallery__picture-author">Автор фото: Петр</small>
+              <p class="gallery__picture-author">Автор фото: Петр</p>
+              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">96</span>
             </li>
             <li class="gallery__item">
@@ -72,7 +75,8 @@
                 <img class="gallery__picture" src="img/gallery/devil-bridge.jpg" width="280" height="280" alt="Мост Дьявола">
               </a>
               <p class="gallery__description">Мост Дьявола</p>
-              <small class="gallery__picture-author">Автор фото: Антон</small>
+              <p class="gallery__picture-author">Автор фото: Антон</p>
+              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">254</span>
             </li>
           </ul>
@@ -80,7 +84,7 @@
       <section class="gallery-video">
           <h2 class="gallery-video__title">Вы еще сомневаетесь?</h2>
           <p class="gallery-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
-          <img src="img/gallery/video-screen.jpg" width="280" height="177" alt="Оживленное шоссе в горах">
+          <img class="gallery-video__screen" src="img/gallery/video-screen.jpg" width="280" height="177" alt="Оживленное шоссе в горах">
       </section>
     </main>
     <footer class="footer">
