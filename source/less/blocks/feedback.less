@@ -2,31 +2,116 @@
   margin-bottom: 20px;
 }
 
-.feedback__textarea::-webkit-input-placeholder {
+@media (min-width: @tablet-width) {
+  .feedback__legend {
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__legend {
+    padding-top: 56px;
+  }
+}
+
+.feedback__textarea-field::-webkit-input-placeholder {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: @color-bold;
-  opacity: 30%;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.feedback__textarea {
+.feedback__textarea-field {
+  font-family: inherit;
   width: 279px;
+  padding: 0;
+  margin-right: 21px;
+  margin-left: 20px;
+  margin-bottom: 56px;
+  outline: none;
+  border: none;
+  background-color: @color-gray;
+  resize: none;
 }
 
 @media (min-width: @tablet-width) {
-  .feedback__textarea {
+  .feedback__textarea-field {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__textarea-field {
+    width: 768px;
+  }
+}
+
+.feedback__button {
+  padding: 16px 49px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.feedback__text {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  margin: 0;
+  padding-bottom: 52px;
+  padding-left: 163px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__button {
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-right: 71px;
+    padding-left: 71px;
+  }
+
+  .feedback__text {
+    font-size: 14px;
+    text-align: right;
+    margin-top: -40px;
+    padding-right: 60px;
+    padding-bottom: 114px;
+    padding-left: 516px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__button {
+    margin-right: 216px;
+    margin-left: 216px;
+  }
+
+  .feedback__text {
+    padding-right: 216px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__textarea-field {
     margin-right: 60px;
     margin-left: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .feedback__textarea {
+  .feedback__textarea-field {
     margin-right: 216px;
     margin-left: 216px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  // .feedback__textarea {
+  //   margin-right: 216px;
+  //   margin-left: 216px;
+  // }
 }
 
 @media (min-width: @tablet-width) {

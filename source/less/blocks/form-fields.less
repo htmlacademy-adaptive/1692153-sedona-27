@@ -4,6 +4,10 @@
 }
 
 .form-fields__title {
+  padding: 0;
+  padding-top: 36px;
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -12,16 +16,59 @@
 }
 
 .form-fields__description {
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
   color: @color-common;
 }
 
+@media (min-width: @tablet-width) {
+  .form-fields__title {
+    font-size: 30px;
+    padding-top: 115px;
+    margin-bottom: 20px;
+  }
+
+  .form-fields__description {
+    line-height: 24px;
+    padding-right: 166px;
+    padding-left: 167px;
+    padding-bottom: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-fields__title {
+    padding-top: 64px;
+    margin-bottom: 40px;
+  }
+
+  .form-fields__description {
+    line-height: 26px;
+    padding-right: 384px;
+    padding-left: 382px;
+    padding-bottom: 67px;
+  }
+}
+
 .fields__legend {
+  padding: 0;
+  padding-top: 24px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   color: @color-bold;
+}
+
+@media (min-width: @tablet-width) {
+  .fields__legend {
+    font-size: 21px;
+  }
 }
 
 .text-fields__name,

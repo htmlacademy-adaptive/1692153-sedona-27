@@ -1,0 +1,73 @@
+.inner-welcome {
+  text-align: center;
+  background-color: @background-spare;
+  background-image: url("../img/inner-welcome-pictures/inner-background-sedona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/inner-welcome-pictures/inner-background-sedona@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.inner-welcome::after {
+  content: "";
+  display: block;
+  height: 57px;
+  background-image: url("../img/decor/decor-for-main-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-welcome__logo {
+  padding-top: 52px;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-welcome {
+    box-sizing: border-box;
+    background-image: url("../img/inner-welcome-pictures/inner-background-sedona768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/inner-welcome-pictures/inner-background-sedona768@2x.jpg");
+      background-size: cover;
+    }
+
+    .inner-welcome__logo {
+      padding-top: 95px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-welcome {
+    background-image: url("../img/inner-welcome-pictures/inner-background-sedona1200.jpg");
+    background-repeat: no-repeat;
+    min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/inner-welcome-pictures/inner-background-sedona1200@2x.jpg");
+      background-size: cover;
+    }
+
+    .inner-welcome__logo {
+      padding-top: 103px;
+    }
+  }
+}
+
+.form-welcome__logo {
+  padding-top: 52px;
+  padding-left: 50px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-container,
+  .form-container {
+    padding-top: 56px;
+  }
+}
