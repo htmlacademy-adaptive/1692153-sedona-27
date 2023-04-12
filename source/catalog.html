@@ -35,7 +35,10 @@
     <main class="catalog-container">
       <div class="inner-welcome">
       <h1 class="visually-hidden">Галерея Седоны</h1>
-      <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logos/inner-sedona-logo786.svg" width="457" height="77">
+        <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      </picture>
       </div>
       <section class="gallery">
           <header class="gallery__header">
@@ -49,7 +52,6 @@
               </a>
               <p class="gallery__description">Неродные просторы</p>
               <p class="gallery__picture-author">Автор фото: Борис</p>
-              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">1350</span>
             </li>
             <li class="gallery__item">
@@ -58,7 +60,6 @@
               </a>
               <p class="gallery__description">Местная растительность</p>
               <p class="gallery__picture-author">Автор фото: Сергей</p>
-              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">143</span>
             </li>
             <li class="gallery__item">
@@ -67,7 +68,6 @@
               </a>
               <p class="gallery__description">Дорога на север</p>
               <p class="gallery__picture-author">Автор фото: Петр</p>
-              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">96</span>
             </li>
             <li class="gallery__item">
@@ -76,7 +76,6 @@
               </a>
               <p class="gallery__description">Мост Дьявола</p>
               <p class="gallery__picture-author">Автор фото: Антон</p>
-              <span class="gallery__picture-like"></span>
               <span class="gallery__like-counter">254</span>
             </li>
           </ul>

@@ -125,7 +125,8 @@
   justify-content: flex-start;
 }
 
-.contact-fields__input--icon-phone {
+.contact-fields__wrapper-tel::after {
+  content: "";
   width: 58px;
   height: 58px;
   background-image: url("../img/icons/icon-phone.svg");
@@ -134,7 +135,8 @@
   background-color: @border-color;
 }
 
-.contact-fields__input--icon-email {
+.contact-fields__wrapper-email::after {
+  content: "";
   width: 58px;
   height: 58px;
   background-image: url("../img/icons/icon-email.svg");

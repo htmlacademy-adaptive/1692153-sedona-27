@@ -35,7 +35,10 @@
     <main class="main-container">
       <div class="main-welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону! Гранд Каньон отдыхает.</h1>
-      <img class="main-welcome__logo" src="img/logos/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logos/welcome-logo768.svg" width="461" height="350">
+        <img class="main-welcome__logo" src="img/logos/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
+      </picture>
       </div>
       <section class="advantages">
           <header class="advantages__header">
@@ -49,7 +52,11 @@
             <p class="advantages__description-light">Седона не атракцион для туристов, там течет своя жизнь.</p>
           </li>
           <li>
-            <img class="advantages__img" src="img/index-main-pictures/sedona-city.jpg" width="320" height="260" alt="Мотели на улицах Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index-main-pictures/sedona-city/sedona-city1200.jpg 1x, img/index-main-pictures/sedona-city/sedona-city1200@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index-main-pictures/sedona-city/sedona-city768.jpg 1x, img/index-main-pictures/sedona-city/sedona-city768@2x.jpg 2x">
+              <img class="advantages__img" src="img/index-main-pictures/sedona-city/sedona-city.jpg" srcset="img/index-main-pictures/sedona-city/sedona-city@2x.jpg 2x" width="320" height="260" alt="Мотели на улицах Седоны">
+            </picture>
           </li>
           </ul>
           <ul class="advantages__list advantages__list--icon-theme">
@@ -68,14 +75,17 @@
           </ul>
           <ul class="advantages__list advantages__list--img-theme advantages__list--img-theme-devil-bridge">
             <li>
-              <img class="advantages__img" src="img/index-main-pictures/devils-bridge-main.jpg" width="320" height="260" alt="Мост Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/index-main-pictures/devils-bridge/devils-bridge-main1200.jpg 1x, img/index-main-pictures/devils-bridge/devils-bridge-main1200@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/index-main-pictures/devils-bridge/devils-bridge-main768.jpg 1x, img/index-main-pictures/devils-bridge/devils-bridge-main768@2x.jpg 2x">
+                <img class="advantages__img" src="img/index-main-pictures/devils-bridge/devils-bridge-main.jpg" srcset="img/index-main-pictures/devils-bridge/devils-bridge-main@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
+              </picture>
             </li>
             <li class="advantages__item--devil-bridge">
               <h2 class="advantages__title-light advantages__title-light-devil-bridge">Там есть<br> мост дьявола</h2>
               <p class="advantages__number-light">—№2—</p>
               <p class="advantages__description-light">Да, но по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
             </li>
-
           </ul>
           <ul class="advantages__list advantages__list--darker-theme">
             <li class="advantages__item--darker-theme">

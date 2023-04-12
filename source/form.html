@@ -35,7 +35,10 @@
     <main class="form-container">
       <div class="inner-welcome">
       <h1 class="visually-hidden">Поля форм</h1>
-      <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logos/inner-sedona-logo786.svg" width="457" height="77">
+        <img class="inner-welcome__logo" src="img/logos/inner-sedona-logo.svg" width="229" height="39" alt="Седона">
+      </picture>
       </div>
         <form class="form-fields" action="https://echo.htmlacademy.ru/" method="get">
           <header class="form-fields__header">
@@ -68,16 +71,14 @@
             <ul class="contact-fields__list">
               <li class="contact-fields__item">
                 <label class="contact-fields__label" for="tel">Контактный телефон*:</label>
-                <div class="contact-fields__wrapper">
+                <div class="contact-fields__wrapper contact-fields__wrapper-tel">
                 <input  class="contact-fields__input" class="tel-number" type="number" name="tel" id="tel" placeholder="Введите телефон">
-                <span class="contact-fields__input-icon contact-fields__input--icon-phone"></span>
                 </div>
               </li>
               <li class="contact-fields__item">
                 <label class="contact-fields__label" for="email">Электронная почта*:</label>
-                <div class="contact-fields__wrapper">
+                <div class="contact-fields__wrapper contact-fields__wrapper-email">
                 <input class="contact-fields__input" type="text" name="email" id="email" placeholder="Введите e-mail">
-                <span class="contact-fields__input-icon contact-fields__input--icon-email"></span>
                 </div>
               </li>
             </ul>
@@ -120,7 +121,7 @@
                 <label class="checkbox-fields__label control">
                   <input class="visually-hidden checkbox-fields__checkbox" type="checkbox" name="devil-bridge" checked>
                   <span class="control-mark-checkbox"></span>
-                  <p class="control-label-checkbox">Мост Дьявола</з>
+                  <span class="control-label-checkbox">Мост Дьявола</з>
                 </label>
               </li>
               <li class="checkbox-fields__item">
@@ -152,9 +153,7 @@
               <legend class="feedback__legend fields__legend">Опишите свои эмоции:</legend>
               <textarea class="feedback__textarea-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
               <button class="feedback__button button" type="submit" href="#">Отправить отзыв</button>
-              <p class="feedback__text">
-                * — обязательные поля
-              </p>
+              <p class="feedback__text">* — обязательные поля</p>
             </fieldset>
           </section>
         </form>
